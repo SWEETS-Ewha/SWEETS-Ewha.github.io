@@ -1,9 +1,14 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
+"Top-tier":
+  color: "#FFD700"
 
-"PhysRev":
-  url: https://journals.aps.org/
+"Intl. Conf.":
+  color: "#BCC924"
 
-"Vision":
-  color: "#009f36"
+"Intl. Journal":
+  color: "#F27367"
+
+"Intl. Workshop":
+  color: "#45A2BC"
+
+"Dom. Conf.":
+  color: "#36AE92"

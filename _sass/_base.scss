@@ -193,10 +193,10 @@ ul.task-list input[type="checkbox"] {
   color: var(--global-theme-color);
 }
 
-// Profile
+// Profile - About
 
-.profile {
-  width: 100%;
+.profile-about {
+  width: 200px;
 
   .more-info {
     margin-bottom: 5px;
@@ -210,25 +210,81 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
-.profile.float-right {
+.profile-about.float-right {
   margin-left: 1rem;
 }
 
-.profile.float-left {
+.profile-about.float-left {
   margin-right: 1rem;
 }
 
-@media (min-width: 576px) {
-  .profile {
-    width: 30%;
+//@media (min-width: 576px) {
+//  .profile {
+//    width: 30%;
+//
+//    .address {
+//      p {
+//        display: block;
+//      }
+//    }
+//  }
+//}
 
-    .address {
-      p {
-        display: block;
-      }
+// Profile Groups
+.profile-group-title {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-bottom: 2px solid var(--global-divider-color);
+  padding-bottom: 0.5rem;
+}
+
+.profile-group-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem 6rem;
+  margin-bottom: 2rem;
+  justify-content: flex-start;
+}
+
+// Profile - People
+
+.profile-people {
+  width: 150px;
+  text-align: center;
+
+  .more-info {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-family: monospace;
+
+    p {
+      display: inline-block;
+      margin: 0;
     }
   }
 }
+
+.profile-people.float-right {
+  margin-left: 1rem;
+}
+
+.profile-people.float-left {
+  margin-right: 1rem;
+}
+
+//@media (min-width: 576px) {
+//  .profile {
+//    width: 30%;
+//
+//    .address {
+//      p {
+//        display: block;
+//      }
+//    }
+//  }
+//}
 
 .post-description {
   margin-bottom: 2rem;
@@ -753,6 +809,13 @@ footer.sticky-bottom {
       }
 
       .abbr {
+        abbr.badge {
+          margin-bottom: 0.5rem;
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
         margin-bottom: 0.5rem;
 
         abbr {
